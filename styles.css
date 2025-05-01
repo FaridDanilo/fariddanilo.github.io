@@ -7,6 +7,7 @@
 
 body {
     background-color: #d5e1ef;
+    font-size: 16px;
 }
 
 .container-qr {
@@ -17,17 +18,19 @@ body {
     position: absolute;
     top: 50%;
     left: 50%;
-    width: 288px;
+    width: 90%;
+    max-width: 320px;
     border-radius: 15px;
-    padding: 15px;
+    padding: 1rem;
     transform: translate(-50%, -50%);
     background-color: #fff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 .container-qr img {
     width: 100%;
     border-radius: 10px;
-    margin-bottom: 20px;
+    margin-bottom: 1.25rem;
 }
 
 .container-qr p, span {
@@ -35,16 +38,16 @@ body {
 }
 
 .container-qr p {
-    font-size: 20px;
+    font-size: 1.25rem;
     font-weight: bold;
     color: #1e2c48;
-    margin-bottom: 15px;
+    margin-bottom: 1rem;
 }
 
 .container-qr span {
-    font-size: 15px;
+    font-size: 1rem;
     color: #888f98;
-    margin-bottom: 15px;
+    margin-bottom: 1rem;
 }
 
 .attribution {
@@ -52,12 +55,40 @@ body {
     bottom: 10px;
     left: 50%;
     transform: translateX(-50%);
-    font-size: 13px;
+    font-size: 0.8125rem;
     color: #888f98;
 }
 
-@media (max-width: 630px) {
+@media (max-width: 768px) {
+    .container-qr {
+        width: 95%;
+        padding: 1rem;
+    }
+
+    .container-qr p {
+        font-size: 1.125rem;
+    }
+
+    .container-qr span {
+        font-size: 0.9375rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .container-qr {
+        width: 100%;
+        padding: 0.75rem;
+    }
+
+    .container-qr p {
+        font-size: 1rem;
+    }
+
+    .container-qr span {
+        font-size: 0.875rem;
+    }
+
     .attribution {
-        font-size: 12px;
+        font-size: 0.75rem;
     }
 }
