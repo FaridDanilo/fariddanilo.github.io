@@ -56,9 +56,36 @@ body {
     color: #888f98;
 }
 
+@media (max-width: 768px) {
+    .container-qr {
+        width: 95%;
+        padding: 1rem;
+    }
+
+    .container-qr p {
+        font-size: 1.125rem;
+    }
+
+    .container-qr span {
+        font-size: 0.9375rem;
+    }
+}
+
 @media (max-width: 480px) {
+    .container-qr {
+        width: 100%;
+        padding: 0.75rem;
+    }
+
+    .container-qr p {
+        font-size: 1rem;
+    }
+
+    .container-qr span {
+        font-size: 0.875rem; 
+    }
+
     .attribution {
-        font-size: 9px;
-        color: red;
+        font-size: 0.75rem;
     }
 }
