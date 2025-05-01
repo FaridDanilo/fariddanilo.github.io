@@ -56,7 +56,7 @@ body {
     color: #888f98;
 }
 
-@media (max-width: 493px) {
+@media (max-width: 480px) {
     .attribution {
         font-size: 8px;
     }
